@@ -1,15 +1,19 @@
-function checkPrime{
-let count=0;
-for(let i=1;i<=num;i++){
-	if(num%i==0){
-	 count++;
+function checkPrime(number){
+let factor=0;
+for(let i=1;i<=number;i++){
+	if(number%i==0){
+	 factor++;
 	}
 }
-if(count==2){
+if(factor==2){
 	return true;
 }else{
 	return false;
 }
 }
-let num=13;
-console.log(checkPrime(num));
+let answer=checkPrime(13);
+if(answer==true){
+	console.log("prime no.");
+}else{
+	console.log("NA");
+}
