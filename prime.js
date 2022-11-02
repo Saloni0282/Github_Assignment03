@@ -11,5 +11,9 @@ if(count==2){
 	return false;
 }
 }
-let num=13;
-console.log(checkPrime(num));
+let ans=checkPrime(13)
+if(ans==true){
+	console.log("prime no.");
+}else{
+	console.log("NA");
+}
